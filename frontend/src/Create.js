@@ -13,9 +13,10 @@ function Create() {
     e.preventDefault();
     axios
       .post("http://localhost:8081/student", values)
-      .then((res) => console.log(res),
-      navigate('/')
-      )
+      .then((res) => {
+        console.log(res);
+        navigate("/");
+      })
       .catch((err) => console.log(err));
   };
   return (
