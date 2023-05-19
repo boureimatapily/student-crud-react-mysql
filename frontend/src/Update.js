@@ -51,7 +51,7 @@ function Update() {
                 placeholder="Enter Name"
                 className="form-control"
                 onChange={e => setValues({ ...values, name: e.target.value })}
-                value={val.name}
+                defaultValue={val.name}
               />
             </div>
             <div className="mb-2">
@@ -62,7 +62,7 @@ function Update() {
                 className="form-control"
                 onChange={e => setValues({ ...values, email: e.target.value })
                 }
-                value={val.email}
+                defaultValue={val.email}
               />
             </div>
             <button className="btn btn-success">Update</button>
